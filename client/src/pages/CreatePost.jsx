@@ -105,7 +105,7 @@ const CreatePost = () => {
           body: JSON.stringify(form),
         });
 
-        await response.json();
+        response.json();
         alert('Success');
         navigate('/');
       } catch (err) {
